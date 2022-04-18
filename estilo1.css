@@ -1,0 +1,212 @@
+body{
+    background-color: rgb(237, 244, 250);
+}
+#grilla {
+    display: grid; 
+    grid-template-areas:
+    "header header header header"
+    "nav productos productos publicidad" 
+    "nav servicios servicios publicidad" 
+    "footer footer footer footer";
+    grid-template-rows: 15% 30% 30% 15%;
+    grid-template-columns: 15% 35% 35% 10%;
+
+}
+    
+    
+    header {
+
+        color: brown;
+        height: 100%;
+        background-color: rgb(237, 244, 250);
+        text-align: center;
+        vertical-align: middle;
+        grid-area: header;
+        font-family: 'Questrial', sans-serif;
+    }
+        .logo{
+        margin-top: 20px;
+        padding: 10px;
+    }
+   header nav ul{
+        background-color: rgb(237, 244, 250);
+        color: black;
+        height: 50px;
+        display: flex;
+        list-style: none;
+        margin-top: 20px;
+        margin-right: 15%;
+        margin-left: 15px;
+        justify-content: space-evenly;  
+    }
+
+    nav li a{
+        color: black;
+        margin: 10px;
+        padding: 5px;
+    }
+    nav li a:hover{
+        background-color: rgb(187, 3, 3);
+        color: rgb(237, 244, 250);
+        border-radius: 10%;
+        
+    }
+    a{
+        text-decoration: none;   
+     }
+     
+     section{
+        height: 100% ;
+        width: 100%;
+        background-color: rgb(237, 244, 250);
+        padding-top: 50px;
+        grid-area: productos;
+        text-align: center;
+     }
+
+     .infografia{
+         width: 100%;
+         align-items: center;
+         justify-content: space-around;
+         display: flex;
+        }
+
+    .portada{ 
+        margin-top: 5rem;
+    }
+    
+    .banner {
+        text-align: center;
+        width: 50px;
+        height: 900px;
+        background-color: rgb(31, 0, 0);
+        grid-area: nav;
+        overflow: scroll;
+    }
+    
+    aside {
+        background-color: rgb(227, 197, 197);
+        
+        height: 900px;
+        text-align: center;
+        padding-right: 30px;
+        font-size-adjust: initial;
+        grid-area: publicidad; 
+        
+    }
+
+   #icono{
+       padding-top: 50px;
+       padding-bottom: 50px;
+   }
+   #titulos{
+       font-size: 1rem;
+       font-family: 'Alata', sans-serif;       
+       color: white;
+       text-align: center;
+       margin-top: 0px;
+       margin-bottom: 10px;
+       margin-left: 5px;
+       margin-right: 5px;
+
+   }
+        
+    p{
+        font-family: 'Hubballi', cursive;
+        color: rgb(75, 73, 73); 
+        font-size: 1rem;
+        margin-top: 0%;
+        margin-right: 10%;
+        margin-left: 10%;
+        text-align: center;
+    }
+
+    p:hover{
+        font-family: 'Hubballi', cursive;
+        color: white;
+        text-align: center;
+    }
+
+    footer {
+        background-color: rgb(237, 244, 250);
+        height: 200px;
+        grid-area: footer; 
+    }
+    .pie {
+    padding-top: 50px;
+    }
+   
+    
+@media  screen and (max-width: 600px) {
+    #grilla {
+        grid-template-columns: auto auto auto; 
+        grid-template-rows: 10% 60% 20% 10%;
+        grid-template-areas: 
+        "header header header"
+        "productos productos productos"
+        "nav nav nav"
+        "footer footer footer";
+    }
+
+    header {
+        color: brown;
+        width: 600px;
+        height: 10%;
+        background-color: rgb(237, 244, 250);
+        text-align: center;
+        vertical-align: middle;
+        grid-area: header;
+        font-family: 'Questrial', sans-serif;
+    }
+   
+    
+
+    #infografia{
+        width: 50%;
+        background-color: rgb(237, 244, 250);
+        grid-area: productos;
+        
+     }
+
+  .banner{
+    background-color: rgb(237, 244, 250);
+      display: flex;
+      flex-direction: row;
+      overflow-x: scroll;
+      height: 100px;
+  }
+  #fotos{
+      padding: 1rem;
+   
+  }
+  aside{
+    background-color: rgb(237, 244, 250);
+    width: 600px;
+    height: 1fr;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+  }
+
+  p:hover{
+      color: black;
+      font-size: large;
+  }
+
+  #titulos{
+      color: rgb(142, 11, 11);
+  }
+  #icono{
+      margin: 20px;
+  }
+
+}
+ 
+
+
+
+
+
+
+
